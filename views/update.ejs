@@ -1,1 +1,19 @@
 <h1>Update</h1>
+
+<form action="/update" method="POST">
+        <select name="name">
+            <% result.forEach(function(res){%> 
+                <option><%=res.name%></option>
+                    
+            <%})%>
+                    
+        </select>
+        Age:<input type="number" name="age" placeholder="Enter new Age">
+        <button>Submit</button>
+
+</form>
+
+            
+
+    
+

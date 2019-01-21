@@ -1,1 +1,13 @@
 <h1>Delete</h1>
+<form action="/delete" method="POST">
+    <select name="name">
+        <% result.forEach(function(res){%> 
+            <option><%=res.name%></option>
+                
+        <%})%>
+                
+    </select>
+    
+    <button>Submit</button>
+
+</form>
